@@ -6,70 +6,20 @@ import { VStack } from '@/components/ui/vstack';
 export default function ButtonPage() {
   return (
     <HStack space="xl" reversed={false}>
-    <VStack space="md" reversed={false}>
-      <Button action={"default"} variant={"outline"} size={"lg"} isDisabled={false}>
-        <ButtonText>default-outline-lg</ButtonText>
-      </Button>
-      <Button action={"default"} variant={"link"} size={"lg"} isDisabled={false}>
-        <ButtonText>default-link-lg</ButtonText>
-      </Button>
-      <Button action={"default"} variant={"solid"} size={"lg"} isDisabled={false}>
-        <ButtonText>default-solid-lg</ButtonText>
-      </Button>
-      <Button action={"default"} variant={"solid"} size={"md"} isDisabled={false}>
-        <ButtonText>default-solid-md</ButtonText>
-      </Button>
-      <Button action={"default"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>default-solid-sm</ButtonText>
-      </Button>
-      <Button action={"default"} variant={"solid"} size={"xl"} isDisabled={false}>
-        <ButtonText>default-solid-sm</ButtonText>
-      </Button>
-      <Button action={"default"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>default-solid-sm</ButtonText>
-      </Button>
-      <Button action={"default"} variant={"outline"} size={"lg"} isDisabled={true}>
-        <ButtonText>default-outline-lg-disabled</ButtonText>
-      </Button>
-      <Button action={"default"} variant={"link"} size={"lg"} isDisabled={true}>
-        <ButtonText>default-link-lg-disabled</ButtonText>
-      </Button>
-      <Button action={"default"} variant={"solid"} size={"lg"} isDisabled={true}>
-        <ButtonText>default-solid-lg-disabled</ButtonText>
-      </Button>
-    </VStack>
 
     <VStack space="md" reversed={false}>
-      <Button action={"primary"} variant={"outline"} size={"lg"} isDisabled={false}>
-        <ButtonText>primary-outline-lg</ButtonText>
-      </Button>
-      <Button action={"primary"} variant={"link"} size={"lg"} isDisabled={false}>
-        <ButtonText>primary-link-lg</ButtonText>
+      <Button action={"primary"} variant={"solid"} size={"md"} isDisabled={false}>
+        <ButtonText>primary-solid-md</ButtonText>
       </Button>
       <Button action={"primary"} variant={"solid"} size={"lg"} isDisabled={false}>
         <ButtonText>primary-solid-lg</ButtonText>
       </Button>
-      <Button action={"primary"} variant={"solid"} size={"md"} isDisabled={false}>
-        <ButtonText>primary-solid-md</ButtonText>
-      </Button>
-      <Button action={"primary"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>primary-solid-sm</ButtonText>
-      </Button>
       <Button action={"primary"} variant={"solid"} size={"xl"} isDisabled={false}>
-        <ButtonText>primary-solid-sm</ButtonText>
-      </Button>
-      <Button action={"primary"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>primary-solid-sm</ButtonText>
-      </Button>
-      <Button action={"primary"} variant={"outline"} size={"lg"} isDisabled={true}>
-        <ButtonText>primary-outline-lg-disabled</ButtonText>
-      </Button>
-      <Button action={"primary"} variant={"link"} size={"lg"} isDisabled={true}>
-        <ButtonText>primary-link-lg-disabled</ButtonText>
-      </Button>
-      <Button action={"primary"} variant={"solid"} size={"lg"} isDisabled={true}>
-        <ButtonText>primary-solid-lg-disabled</ButtonText>
-      </Button>
+        <ButtonText>primary-solid-xl</ButtonText>
+      </Button> 
+      <Button action={"primary"} variant={"solid"} size={"xl"} isDisabled={true}>
+        <ButtonText>primary-disabled</ButtonText>
+      </Button>   
     </VStack>
 
     <VStack space="md" reversed={false}>
