@@ -37,53 +37,53 @@ cssInterop(PrimitiveIcon, {
 });
 
 const buttonStyle = tva({
-  base: 'group/button '+
-        'rounded-lg '+
-        'flex-row '+
-        'items-center '+
-        'justify-center '+
-        'text-base-white '+     
-        'gap-2 ',
+  base: 'group/button ' +
+    'rounded-lg ' +
+    'flex-row ' +
+    'items-center ' +
+    'justify-center ' +
+    'text-base-white ' +
+    'gap-2 ',
   variants: {
     action: {
       primary:
-        'bg-primary-900 '+
+        'bg-primary-900 ' +
         'shadow-sm ' +
-        'data-[hover=true]:bg-primary-700 '+
-        'data-[active=true]:bg-primary-600 '+  
-        'data-[active=true]:shadow-lg '+  
-        'data-[active=true]:shadow-primary-500/24 '+   
-        'data-[disabled=true]:border-gray-200 '+
-        'data-[disabled=true]:border '+
+        'data-[hover=true]:bg-primary-700 ' +
+        'data-[active=true]:bg-primary-600 ' +
+        'data-[active=true]:shadow-lg ' +
+        'data-[active=true]:shadow-primary-500/24 ' +
+        'data-[disabled=true]:border-gray-200 ' +
+        'data-[disabled=true]:border ' +
         'data-[disabled=true]:bg-gray-100 ',
       secondaryColour:
-        'bg-base-white '+
-        'border '+ 
+        'bg-base-white ' +
+        'border ' +
         'shadow-sm ' +
-        'border-primary-300 '+
-        'data-[hover=true]:bg-primary-50 '+
-        'data-[active=true]:shadow-lg '+  
-        'data-[active=true]:shadow-primary-500/24 '+  
-        'data-[disabled=true]:border-gray-200 '+
+        'border-primary-300 ' +
+        'data-[hover=true]:bg-primary-50 ' +
+        'data-[active=true]:shadow-lg ' +
+        'data-[active=true]:shadow-primary-500/24 ' +
+        'data-[disabled=true]:border-gray-200 ' +
         'data-[disabled=true]:border ',
       secondaryGray:
-        'border ' + 
-        'border-gray-300 '+
-        'shadow-sm '+
-        'bg-base-white '+
-        'data-[hover=true]:bg-gray-100 '+
-        'data-[active=true]:shadow-lg '+   
-        'data-[disabled=true]:border-gray-200 '+
+        'border ' +
+        'border-gray-300 ' +
+        'shadow-sm ' +
+        'bg-base-white ' +
+        'data-[hover=true]:bg-gray-100 ' +
+        'data-[active=true]:shadow-lg ' +
+        'data-[disabled=true]:border-gray-200 ' +
         'data-[disabled=true]:border ',
       destructive:
-        'bg-base-white '+
-        'border '+ 
+        'bg-base-white ' +
+        'border ' +
         'shadow-sm ' +
-        'border-error-300 '+
-        'data-[hover=true]:bg-error-50 '+
-        'data-[active=true]:shadow-lg '+  
-        'data-[active=true]:shadow-error-500/24 '+  
-        'data-[disabled=true]:border-gray-200 '+
+        'border-error-300 ' +
+        'data-[hover=true]:bg-error-50 ' +
+        'data-[active=true]:shadow-lg ' +
+        'data-[active=true]:shadow-error-500/24 ' +
+        'data-[disabled=true]:border-gray-200 ' +
         'data-[disabled=true]:border ',
       default:
         '',
@@ -111,14 +111,14 @@ const buttonStyle = tva({
       action: 'secondaryColour',
       variant: 'link',
       class:
-        'px-0 '+
-        'bg-transparent '+
-        'border-transparent '+
-        'shadow-transparent '+ 
-        'data-[hover=true]:bg-transparent '+
-        'data-[active=true]:bg-transparent '+
-        'data-[active=true]:text-gray-100 '+
-        'data-[active=true]:shadow-none '+ 
+        'px-0 ' +
+        'bg-transparent ' +
+        'border-transparent ' +
+        'shadow-transparent ' +
+        'data-[hover=true]:bg-transparent ' +
+        'data-[active=true]:bg-transparent ' +
+        'data-[active=true]:text-gray-100 ' +
+        'data-[active=true]:shadow-none ' +
         'data-[disabled=true]:border-none ',
 
     },
@@ -126,44 +126,44 @@ const buttonStyle = tva({
       action: 'secondaryGray',
       variant: 'link',
       class:
-        'px-0 '+
-        'bg-transparent '+
-        'border-transparent '+
-        'shadow-transparent '+ 
-        'data-[hover=true]:bg-transparent '+
-        'data-[active=true]:bg-transparent '+
-        'data-[active=true]:text-gray-100 '+
-        'data-[active=true]:shadow-none '+
+        'px-0 ' +
+        'bg-transparent ' +
+        'border-transparent ' +
+        'shadow-transparent ' +
+        'data-[hover=true]:bg-transparent ' +
+        'data-[active=true]:bg-transparent ' +
+        'data-[active=true]:text-gray-100 ' +
+        'data-[active=true]:shadow-none ' +
         'data-[disabled=true]:border-none ',
     },
   ],
 });
 
 const buttonTextStyle = tva({
-  base: 'font-semibold '+
-        'web:select-none',
+  base: 'font-semibold ' +
+    'web:select-none',
   parentVariants: {
     action: {
       primary:
-        'text-base-white '+
+        'text-base-white ' +
         'data-[disabled=true]:text-gray-400 ',
       secondaryColour:
-        'text-primary-700 '+
-        'data-[hover=true]:text-primary-800 '+
+        'text-primary-700 ' +
+        'data-[hover=true]:text-primary-800 ' +
         'data-[disabled=true]:text-gray-400 ',
       secondaryGray:
-        'text-gray-700 '+
-        'data-[hover=true]:text-gray-800 '+
-        'data-[active=true]:text-gray-900 '+
+        'text-gray-700 ' +
+        'data-[hover=true]:text-gray-800 ' +
+        'data-[active=true]:text-gray-900 ' +
         'data-[disabled=true]:text-gray-400 ',
       destructive:
-      'text-error-700 '+
-      'data-[hover=true]:text-error-800 '+
-      'data-[disabled=true]:text-gray-400 ',
+        'text-error-700 ' +
+        'data-[hover=true]:text-error-800 ' +
+        'data-[disabled=true]:text-gray-400 ',
     },
     variant: {
       link: '',
-      default:'',
+      default: '',
     },
     size: {
       xs: 'text-xs',
@@ -177,7 +177,7 @@ const buttonTextStyle = tva({
     {
       variant: 'default',
       action: 'primary',
-      class:  '',
+      class: '',
     },
     {
       variant: 'default',
@@ -193,7 +193,7 @@ const buttonTextStyle = tva({
       variant: 'default',
       action: 'destructive',
       class: '',
-    },   
+    },
   ],
 });
 
@@ -202,7 +202,7 @@ const buttonIconStyle = tva({
   parentVariants: {
     variant: {
       link: '',
-      default:'',
+      default: '',
     },
     size: {
       xs: 'h-3.5 w-3.5',
@@ -213,7 +213,7 @@ const buttonIconStyle = tva({
     },
     action: {
       primary: '',
-        secondaryColour:'',
+      secondaryColour: '',
       secondaryGray: '',
       destructive: '',
     },
@@ -228,36 +228,36 @@ const buttonIconStyle = tva({
       variant: 'default',
       action: 'secondaryColour',
       class:
-        'text-primary-800 '+
+        'text-primary-800 ' +
         'data-[disabled=true]:text-gray-400 ',
     },
     {
       variant: 'default',
       action: 'secondaryGray',
       class:
-        'text-gray-800 '+
+        'text-gray-800 ' +
         'data-[disabled=true]:text-gray-400 ',
     },
     {
       variant: 'default',
       action: 'destructive',
       class:
-      'text-error-800 '+
-      'data-[disabled=true]:text-gray-400 ',
+        'text-error-800 ' +
+        'data-[disabled=true]:text-gray-400 ',
     },
     {
       variant: 'link',
       action: 'secondaryColour',
       class:
-      'text-primary-800 '+
-      'data-[disabled=true]:text-gray-400 ',
+        'text-primary-800 ' +
+        'data-[disabled=true]:text-gray-400 ',
     },
     {
       variant: 'link',
       action: 'secondaryGray',
       class:
-      'text-gray-800 '+
-      'data-[disabled=true]:text-gray-400 ',
+        'text-gray-800 ' +
+        'data-[disabled=true]:text-gray-400 ',
     },
   ],
 });
