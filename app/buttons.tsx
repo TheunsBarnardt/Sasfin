@@ -8,67 +8,166 @@ export default function ButtonPage() {
     <HStack space="xl" reversed={false}>
     <VStack space="md" reversed={false}>
       <Button action={"default"} variant={"outline"} size={"lg"} isDisabled={false}>
-        <ButtonText>brand-outline-lg</ButtonText>
+        <ButtonText>default-outline-lg</ButtonText>
       </Button>
       <Button action={"default"} variant={"link"} size={"lg"} isDisabled={false}>
-        <ButtonText>brand-link-lg</ButtonText>
+        <ButtonText>default-link-lg</ButtonText>
       </Button>
       <Button action={"default"} variant={"solid"} size={"lg"} isDisabled={false}>
-        <ButtonText>brand-solid-lg</ButtonText>
+        <ButtonText>default-solid-lg</ButtonText>
       </Button>
       <Button action={"default"} variant={"solid"} size={"md"} isDisabled={false}>
-        <ButtonText>brand-solid-md</ButtonText>
+        <ButtonText>default-solid-md</ButtonText>
       </Button>
       <Button action={"default"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>brand-solid-sm</ButtonText>
+        <ButtonText>default-solid-sm</ButtonText>
       </Button>
       <Button action={"default"} variant={"solid"} size={"xl"} isDisabled={false}>
-        <ButtonText>brand-solid-sm</ButtonText>
+        <ButtonText>default-solid-sm</ButtonText>
       </Button>
       <Button action={"default"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>brand-solid-sm</ButtonText>
+        <ButtonText>default-solid-sm</ButtonText>
       </Button>
       <Button action={"default"} variant={"outline"} size={"lg"} isDisabled={true}>
-        <ButtonText>brand-outline-lg-disabled</ButtonText>
+        <ButtonText>default-outline-lg-disabled</ButtonText>
       </Button>
       <Button action={"default"} variant={"link"} size={"lg"} isDisabled={true}>
-        <ButtonText>brand-link-lg-disabled</ButtonText>
+        <ButtonText>default-link-lg-disabled</ButtonText>
       </Button>
       <Button action={"default"} variant={"solid"} size={"lg"} isDisabled={true}>
-        <ButtonText>brand-solid-lg-disabled</ButtonText>
+        <ButtonText>default-solid-lg-disabled</ButtonText>
       </Button>
     </VStack>
-    <VStack space="md" reversed={false}>
 
+    <VStack space="md" reversed={false}>
       <Button action={"primary"} variant={"outline"} size={"lg"} isDisabled={false}>
-        <ButtonText>gray-outline-lg</ButtonText>
+        <ButtonText>primary-outline-lg</ButtonText>
       </Button>
       <Button action={"primary"} variant={"link"} size={"lg"} isDisabled={false}>
-        <ButtonText>gray-link-lg</ButtonText>
+        <ButtonText>primary-link-lg</ButtonText>
       </Button>
       <Button action={"primary"} variant={"solid"} size={"lg"} isDisabled={false}>
-        <ButtonText>gray-solid-lg</ButtonText>
+        <ButtonText>primary-solid-lg</ButtonText>
       </Button>
       <Button action={"primary"} variant={"solid"} size={"md"} isDisabled={false}>
-        <ButtonText>gray-solid-md</ButtonText>
+        <ButtonText>primary-solid-md</ButtonText>
       </Button>
       <Button action={"primary"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>gray-solid-sm</ButtonText>
+        <ButtonText>primary-solid-sm</ButtonText>
       </Button>
       <Button action={"primary"} variant={"solid"} size={"xl"} isDisabled={false}>
-        <ButtonText>gray-solid-sm</ButtonText>
+        <ButtonText>primary-solid-sm</ButtonText>
       </Button>
       <Button action={"primary"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>gray-solid-sm</ButtonText>
+        <ButtonText>primary-solid-sm</ButtonText>
       </Button>
       <Button action={"primary"} variant={"outline"} size={"lg"} isDisabled={true}>
-        <ButtonText>gray-outline-lg-disabled</ButtonText>
+        <ButtonText>primary-outline-lg-disabled</ButtonText>
       </Button>
       <Button action={"primary"} variant={"link"} size={"lg"} isDisabled={true}>
-        <ButtonText>gray-link-lg-disabled</ButtonText>
+        <ButtonText>primary-link-lg-disabled</ButtonText>
       </Button>
       <Button action={"primary"} variant={"solid"} size={"lg"} isDisabled={true}>
+        <ButtonText>primary-solid-lg-disabled</ButtonText>
+      </Button>
+    </VStack>
+
+    <VStack space="md" reversed={false}>
+      <Button action={"secondaryGray"} variant={"outline"} size={"lg"} isDisabled={false}>
+        <ButtonText>gray-outline-lg</ButtonText>
+      </Button>
+      <Button action={"secondaryGray"} variant={"link"} size={"lg"} isDisabled={false}>
+        <ButtonText>gray-link-lg</ButtonText>
+      </Button>
+      <Button action={"secondaryGray"} variant={"solid"} size={"lg"} isDisabled={false}>
+        <ButtonText>gray-solid-lg</ButtonText>
+      </Button>
+      <Button action={"secondaryGray"} variant={"solid"} size={"md"} isDisabled={false}>
+        <ButtonText>gray-solid-md</ButtonText>
+      </Button>
+      <Button action={"secondaryGray"} variant={"solid"} size={"sm"} isDisabled={false}>
+        <ButtonText>gray-solid-sm</ButtonText>
+      </Button>
+      <Button action={"secondaryGray"} variant={"solid"} size={"xl"} isDisabled={false}>
+        <ButtonText>gray-solid-sm</ButtonText>
+      </Button>
+      <Button action={"secondaryGray"} variant={"solid"} size={"sm"} isDisabled={false}>
+        <ButtonText>gray-solid-sm</ButtonText>
+      </Button>
+      <Button action={"secondaryGray"} variant={"outline"} size={"lg"} isDisabled={true}>
+        <ButtonText>gray-outline-lg-disabled</ButtonText>
+      </Button>
+      <Button action={"secondaryGray"} variant={"link"} size={"lg"} isDisabled={true}>
+        <ButtonText>gray-link-lg-disabled</ButtonText>
+      </Button>
+      <Button action={"secondaryGray"} variant={"solid"} size={"lg"} isDisabled={true}>
         <ButtonText>gray-solid-lg-disabled</ButtonText>
+      </Button>
+    </VStack>
+
+    <VStack space="md" reversed={false}>
+      <Button action={"secondaryBrightBlue"} variant={"outline"} size={"lg"} isDisabled={false}>
+        <ButtonText>BrightBlue-outline-lg</ButtonText>
+      </Button>
+      <Button action={"secondaryBrightBlue"} variant={"link"} size={"lg"} isDisabled={false}>
+        <ButtonText>BrightBlue-link-lg</ButtonText>
+      </Button>
+      <Button action={"secondaryBrightBlue"} variant={"solid"} size={"lg"} isDisabled={false}>
+        <ButtonText>BrightBlue-solid-lg</ButtonText>
+      </Button>
+      <Button action={"secondaryBrightBlue"} variant={"solid"} size={"md"} isDisabled={false}>
+        <ButtonText>BrightBlue-solid-md</ButtonText>
+      </Button>
+      <Button action={"secondaryBrightBlue"} variant={"solid"} size={"sm"} isDisabled={false}>
+        <ButtonText>BrightBlue-solid-sm</ButtonText>
+      </Button>
+      <Button action={"secondaryBrightBlue"} variant={"solid"} size={"xl"} isDisabled={false}>
+        <ButtonText>BrightBlue-solid-sm</ButtonText>
+      </Button>
+      <Button action={"secondaryBrightBlue"} variant={"solid"} size={"sm"} isDisabled={false}>
+        <ButtonText>BrightBlue-solid-sm</ButtonText>
+      </Button>
+      <Button action={"secondaryBrightBlue"} variant={"outline"} size={"lg"} isDisabled={true}>
+        <ButtonText>BrightBlue-outline-lg-disabled</ButtonText>
+      </Button>
+      <Button action={"secondaryBrightBlue"} variant={"link"} size={"lg"} isDisabled={true}>
+        <ButtonText>BrightBlue-link-lg-disabled</ButtonText>
+      </Button>
+      <Button action={"secondaryBrightBlue"} variant={"solid"} size={"lg"} isDisabled={true}>
+        <ButtonText>yBrightBlue-solid-lg-disabled</ButtonText>
+      </Button>
+    </VStack>
+
+    <VStack space="md" reversed={false}>
+      <Button action={"secondarySkyBlue"} variant={"outline"} size={"lg"} isDisabled={false}>
+        <ButtonText>SkyBlue-outline-lg</ButtonText>
+      </Button>
+      <Button action={"secondarySkyBlue"} variant={"link"} size={"lg"} isDisabled={false}>
+        <ButtonText>SkyBlue-link-lg</ButtonText>
+      </Button>
+      <Button action={"secondarySkyBlue"} variant={"solid"} size={"lg"} isDisabled={false}>
+        <ButtonText>SkyBlue-solid-lg</ButtonText>
+      </Button>
+      <Button action={"secondarySkyBlue"} variant={"solid"} size={"md"} isDisabled={false}>
+        <ButtonText>SkyBlue-solid-md</ButtonText>
+      </Button>
+      <Button action={"secondarySkyBlue"} variant={"solid"} size={"sm"} isDisabled={false}>
+        <ButtonText>SkyBlue-solid-sm</ButtonText>
+      </Button>
+      <Button action={"secondarySkyBlue"} variant={"solid"} size={"xl"} isDisabled={false}>
+        <ButtonText>SkyBlue-solid-sm</ButtonText>
+      </Button>
+      <Button action={"secondarySkyBlue"} variant={"solid"} size={"sm"} isDisabled={false}>
+        <ButtonText>SkyBlue-solid-sm</ButtonText>
+      </Button>
+      <Button action={"secondarySkyBlue"} variant={"outline"} size={"lg"} isDisabled={true}>
+        <ButtonText>SkyBlue-outline-lg-disabled</ButtonText>
+      </Button>
+      <Button action={"secondaryBrightBlue"} variant={"link"} size={"lg"} isDisabled={true}>
+        <ButtonText>SkyBlue-link-lg-disabled</ButtonText>
+      </Button>
+      <Button action={"secondarySkyBlue"} variant={"solid"} size={"lg"} isDisabled={true}>
+        <ButtonText>SkyBlue-solid-lg-disabled</ButtonText>
       </Button>
     </VStack>
 
@@ -106,35 +205,35 @@ export default function ButtonPage() {
       </Button>
     </VStack>
     <VStack space="md" reversed={false}>
-      <Button action={"positive"} variant={"outline"} size={"lg"} isDisabled={false}>
-        <ButtonText>positive-outline-lg</ButtonText>
+      <Button action={"success"} variant={"outline"} size={"lg"} isDisabled={false}>
+        <ButtonText>success-outline-lg</ButtonText>
       </Button>
-      <Button action={"positive"} variant={"link"} size={"lg"} isDisabled={false}>
-        <ButtonText>positive-link-lg</ButtonText>
+      <Button action={"success"} variant={"link"} size={"lg"} isDisabled={false}>
+        <ButtonText>success-link-lg</ButtonText>
       </Button>
-      <Button action={"positive"} variant={"solid"} size={"lg"} isDisabled={false}>
-        <ButtonText>positive-solid-lg</ButtonText>
+      <Button action={"success"} variant={"solid"} size={"lg"} isDisabled={false}>
+        <ButtonText>success-solid-lg</ButtonText>
       </Button>
-      <Button action={"positive"} variant={"solid"} size={"md"} isDisabled={false}>
-        <ButtonText>positive-solid-md</ButtonText>
+      <Button action={"success"} variant={"solid"} size={"md"} isDisabled={false}>
+        <ButtonText>success-solid-md</ButtonText>
       </Button>
-      <Button action={"positive"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>positive-solid-sm</ButtonText>
+      <Button action={"success"} variant={"solid"} size={"sm"} isDisabled={false}>
+        <ButtonText>success-solid-sm</ButtonText>
       </Button>
-      <Button action={"positive"} variant={"solid"} size={"xl"} isDisabled={false}>
-        <ButtonText>positive-solid-sm</ButtonText>
+      <Button action={"success"} variant={"solid"} size={"xl"} isDisabled={false}>
+        <ButtonText>success-solid-sm</ButtonText>
       </Button>
-      <Button action={"positive"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>positive-solid-sm</ButtonText>
+      <Button action={"success"} variant={"solid"} size={"sm"} isDisabled={false}>
+        <ButtonText>success-solid-sm</ButtonText>
       </Button>
-      <Button action={"positive"} variant={"outline"} size={"lg"} isDisabled={true}>
-        <ButtonText>positive-outline-lg-disabled</ButtonText>
+      <Button action={"success"} variant={"outline"} size={"lg"} isDisabled={true}>
+        <ButtonText>success-outline-lg-disabled</ButtonText>
       </Button>
-      <Button action={"positive"} variant={"link"} size={"lg"} isDisabled={true}>
-        <ButtonText>positive-link-lg-disabled</ButtonText>
+      <Button action={"success"} variant={"link"} size={"lg"} isDisabled={true}>
+        <ButtonText>success-link-lg-disabled</ButtonText>
       </Button>
-      <Button action={"positive"} variant={"solid"} size={"lg"} isDisabled={true}>
-        <ButtonText>positive-solid-lg-disabled</ButtonText>
+      <Button action={"success"} variant={"solid"} size={"lg"} isDisabled={true}>
+        <ButtonText>success-solid-lg-disabled</ButtonText>
       </Button>
     </VStack>
 

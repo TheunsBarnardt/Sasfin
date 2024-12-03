@@ -57,15 +57,31 @@ const buttonStyle = tva({
         'data-[hover=true]:border-primary-400 '+
         'data-[active=true]:border-primary-500 '+
         'data-[focus-visible=true]:web:ring-indicator-info',
-      secondary:
-        'bg-secondary-500 '+
-        'border-secondary-300 '+
-        'data-[hover=true]:bg-secondary-600 '+
-        'data-[hover=true]:border-secondary-400 '+
-        'data-[active=true]:bg-secondary-700 '+
-        'data-[active=true]:border-secondary-700 '+
+      secondarySkyBlue:
+        'bg-skyBlue-500 '+
+        'border-skyBlue-300 '+
+        'data-[hover=true]:bg-skyBlue-600 '+
+        'data-[hover=true]:border-skyBlue-400 '+
+        'data-[active=true]:bg-skyBlue-700 '+
+        'data-[active=true]:border-skyBlue-700 '+
         'data-[focus-visible=true]:web:ring-indicator-info',
-      positive:
+      secondaryBrightBlue:
+        'bg-brightBlue-500 '+
+        'border-brightBlue-300 '+
+        'data-[hover=true]:bg-brightBlue-600 '+
+        'data-[hover=true]:border-brightBlue-400 '+
+        'data-[active=true]:bg-brightBlue-700 '+
+        'data-[active=true]:border-brightBlue-700 '+
+        'data-[focus-visible=true]:web:ring-indicator-info',
+      secondaryGray:
+        'bg-skyBlue-500 '+
+        'border-skyBlue-300 '+
+        'data-[hover=true]:bg-skyBlue-600 '+
+        'data-[hover=true]:border-skyBlue-400 '+
+        'data-[active=true]:bg-skyBlue-700 '+
+        'data-[active=true]:border-skyBlue-700 '+
+        'data-[focus-visible=true]:web:ring-indicator-info',
+      success:
         'bg-success-500 '+
         'border-success-300 '+
         'data-[hover=true]:bg-success-600 '+
@@ -114,7 +130,7 @@ const buttonStyle = tva({
         'data-[active=true]:bg-transparent',
     },
     {
-      action: 'secondary',
+      action: 'secondarySkyBlue',
       variant: 'link',
       class:
         'px-0 '+
@@ -123,7 +139,25 @@ const buttonStyle = tva({
         'data-[active=true]:bg-transparent',
     },
     {
-      action: 'positive',
+      action: 'secondaryBrightBlue',
+      variant: 'link',
+      class:
+        'px-0 '+
+        'bg-transparent '+
+        'data-[hover=true]:bg-transparent '+
+        'data-[active=true]:bg-transparent',
+    },
+    {
+      action: 'secondaryGray',
+      variant: 'link',
+      class:
+        'px-0 '+
+        'bg-transparent '+
+        'data-[hover=true]:bg-transparent '+
+        'data-[active=true]:bg-transparent',
+    },
+    {
+      action: 'success',
       variant: 'link',
       class:
         'px-0 '+
@@ -149,7 +183,7 @@ const buttonStyle = tva({
         'data-[active=true]:bg-transparent',
     },
     {
-      action: 'secondary',
+      action: 'secondarySkyBlue',
       variant: 'outline',
       class:
         'bg-transparent '+
@@ -157,7 +191,23 @@ const buttonStyle = tva({
         'data-[active=true]:bg-transparent',
     },
     {
-      action: 'positive',
+      action: 'secondaryBrightBlue',
+      variant: 'outline',
+      class:
+        'bg-transparent '+
+        'data-[hover=true]:bg-background-50 '+
+        'data-[active=true]:bg-transparent',
+    },
+    {
+      action: 'secondaryGray',
+      variant: 'outline',
+      class:
+        'bg-transparent '+
+        'data-[hover=true]:bg-background-50 '+
+        'data-[active=true]:bg-transparent',
+    },
+    {
+      action: 'success',
       variant: 'outline',
       class:
         'bg-transparent '+
@@ -185,11 +235,19 @@ const buttonTextStyle = tva({
         'text-primary-600 '+
         'data-[hover=true]:text-primary-600 '+
         'data-[active=true]:text-primary-700',
-      secondary:
+      secondarySkyBlue:
         'text-typography-500 '+
         'data-[hover=true]:text-typography-600 '+
         'data-[active=true]:text-typography-700',
-      positive:
+      secondaryBrightBlue:
+        'text-typography-500 '+
+        'data-[hover=true]:text-typography-600 '+
+        'data-[active=true]:text-typography-700',
+      secondaryGray:
+        'text-typography-500 '+
+        'data-[hover=true]:text-typography-600 '+
+        'data-[active=true]:text-typography-700',
+      success:
         'text-success-600 '+
         'data-[hover=true]:text-success-600 '+
         'data-[active=true]:text-success-700',
@@ -227,7 +285,7 @@ const buttonTextStyle = tva({
     },
     {
       variant: 'solid',
-      action: 'secondary',
+      action: 'secondarySkyBlue',
       class:
         'text-typography-800 '+
         'data-[hover=true]:text-typography-800 '+
@@ -235,7 +293,23 @@ const buttonTextStyle = tva({
     },
     {
       variant: 'solid',
-      action: 'positive',
+      action: 'secondaryBrightBlue',
+      class:
+        'text-typography-800 '+
+        'data-[hover=true]:text-typography-800 '+
+        'data-[active=true]:text-typography-800',
+    },
+    {
+      variant: 'solid',
+      action: 'secondaryGray',
+      class:
+        'text-typography-800 '+
+        'data-[hover=true]:text-typography-800 '+
+        'data-[active=true]:text-typography-800',
+    },
+    {
+      variant: 'solid',
+      action: 'success',
       class:
         'text-typography-0 '+
         'data-[hover=true]:text-typography-0 '+
@@ -259,7 +333,7 @@ const buttonTextStyle = tva({
     },
     {
       variant: 'outline',
-      action: 'secondary',
+      action: 'secondarySkyBlue',
       class:
         'text-typography-500 '+
         'data-[hover=true]:text-primary-600 '+
@@ -267,7 +341,23 @@ const buttonTextStyle = tva({
     },
     {
       variant: 'outline',
-      action: 'positive',
+      action: 'secondaryBrightBlue',
+      class:
+        'text-typography-500 '+
+        'data-[hover=true]:text-primary-600 '+
+        'data-[active=true]:text-typography-700',
+    },
+    {
+      variant: 'outline',
+      action: 'secondaryGray',
+      class:
+        'text-typography-500 '+
+        'data-[hover=true]:text-primary-600 '+
+        'data-[active=true]:text-typography-700',
+    },
+    {
+      variant: 'outline',
+      action: 'success',
       class:
         'text-primary-500 '+
         'data-[hover=true]:text-primary-500 '+
@@ -309,11 +399,19 @@ const buttonIconStyle = tva({
         'text-primary-600 '+
         'data-[hover=true]:text-primary-600 '+
         'data-[active=true]:text-primary-700',
-      secondary:
+      secondarySkyBlue:
         'text-typography-500 '+
         'data-[hover=true]:text-typography-600 '+
         'data-[active=true]:text-typography-700',
-      positive:
+      secondaryBrightBlue:
+        'text-typography-500 '+
+        'data-[hover=true]:text-typography-600 '+
+        'data-[active=true]:text-typography-700',
+      secondaryGray:
+        'text-typography-500 '+
+        'data-[hover=true]:text-typography-600 '+
+        'data-[active=true]:text-typography-700',
+      success:
         'text-success-600 '+
         'data-[hover=true]:text-success-600 '+
         'data-[active=true]:text-success-700',
@@ -335,7 +433,7 @@ const buttonIconStyle = tva({
     },
     {
       variant: 'solid',
-      action: 'secondary',
+      action: 'secondarySkyBlue',
       class:
         'text-typography-800 '+
         'data-[hover=true]:text-typography-800 '+
@@ -343,7 +441,23 @@ const buttonIconStyle = tva({
     },
     {
       variant: 'solid',
-      action: 'positive',
+      action: 'secondaryBrightBlue',
+      class:
+        'text-typography-800 '+
+        'data-[hover=true]:text-typography-800 '+
+        'data-[active=true]:text-typography-800',
+    },
+    {
+      variant: 'solid',
+      action: 'secondaryGray',
+      class:
+        'text-typography-800 '+
+        'data-[hover=true]:text-typography-800 '+
+        'data-[active=true]:text-typography-800',
+    },
+    {
+      variant: 'solid',
+      action: 'success',
       class:
         'text-typography-0 '+
         'data-[hover=true]:text-typography-0 '+
