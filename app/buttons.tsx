@@ -1,6 +1,7 @@
 import React from 'react'; import { Button, ButtonText, ButtonSpinner, ButtonIcon } from '@/components/ui/button';
 import { HStack } from '@/components/ui/hstack';
 import { VStack } from '@/components/ui/vstack';
+import { EditIcon } from '@/components/ui/icon';
 
 
 export default function ButtonPage() {
@@ -19,7 +20,10 @@ export default function ButtonPage() {
       </Button> 
       <Button action={"primary"}  size={"xl"} isDisabled={true}>
         <ButtonText>primary-disabled</ButtonText>
-      </Button>   
+      </Button>  
+      <Button size="lg" action={"primary"}>
+        <ButtonIcon as={EditIcon} />
+      </Button> 
     </VStack>
 
     <VStack space="md" reversed={false}>
@@ -35,6 +39,10 @@ export default function ButtonPage() {
       <Button action={"secondaryGray"}  size={"xl"} isDisabled={true}>
         <ButtonText>gray-disabled</ButtonText>
       </Button>   
+
+      <Button size="lg" action={"secondaryGray"}>
+        <ButtonIcon as={EditIcon} />
+      </Button> 
     </VStack>  
 
     <VStack space="md" reversed={false}>
@@ -49,6 +57,10 @@ export default function ButtonPage() {
       </Button> 
       <Button action={"secondaryColour"}  size={"xl"} isDisabled={true}>
         <ButtonText>colour-disabled</ButtonText>
+      </Button> 
+
+      <Button size="lg" action={"secondaryColour"}>
+        <ButtonIcon as={EditIcon} />
       </Button>   
     </VStack>  
 
@@ -65,6 +77,10 @@ export default function ButtonPage() {
       <Button action={"destructive"} size={"xl"} isDisabled={true}>
         <ButtonText>destructive-disabled</ButtonText>
       </Button>   
+
+      <Button size="lg" action={"destructive"}>
+        <ButtonIcon as={EditIcon} />
+      </Button>  
     </VStack>  
 
     <VStack space="md" reversed={false}>
@@ -80,6 +96,10 @@ export default function ButtonPage() {
       <Button action={"secondaryGray"} variant={"link"} size={"xl"} isDisabled={true}>
         <ButtonText>gray-link-disabled</ButtonText>
       </Button>   
+
+      <Button size="lg" action={"secondaryGray"} variant={"link"}>
+        <ButtonIcon as={EditIcon} />
+      </Button>  
     </VStack>  
 
     <VStack space="md" reversed={false}>
@@ -94,6 +114,10 @@ export default function ButtonPage() {
       </Button> 
       <Button action={"secondaryColour"} variant={"link"} size={"xl"} isDisabled={true}>
         <ButtonText>gray-link-disabled</ButtonText>
+      </Button>  
+
+      <Button size="lg" action={"secondaryColour"} variant={"link"}>
+        <ButtonIcon as={EditIcon} />
       </Button>   
     </VStack>  
 

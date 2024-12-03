@@ -201,15 +201,8 @@ const buttonIconStyle = tva({
   base: 'fill-none',
   parentVariants: {
     variant: {
-      link: 
-        //'data-[hover=true]:underline '+
-        //'data-[active=true]:underline',
-        '',
-      default:
-        //'text-typography-0 '+
-        //'data-[hover=true]:text-typography-0 '+
-        //'data-[active=true]:text-typography-0',
-        '',
+      link: '',
+      default:'',
     },
     size: {
       xs: 'h-3.5 w-3.5',
@@ -219,64 +212,47 @@ const buttonIconStyle = tva({
       xl: 'h-5 w-5',
     },
     action: {
-      primary:
-        //'text-primary-600 '+
-        //'data-[hover=true]:text-primary-600 '+
-        //'data-[active=true]:text-primary-700',
-        '',
-        secondaryColour:
-        //'text-typography-500 '+
-        //'data-[hover=true]:text-typography-600 '+
-        //'data-[active=true]:text-typography-700',
-        '',
-      secondaryGray:
-        //'text-typography-500 '+
-        //'data-[hover=true]:text-typography-600 '+
-        //'data-[active=true]:text-typography-700',
-        '',
-      destructive:
-        //'text-error-600 '+
-        //'data-[hover=true]:text-error-600 '+
-        //'data-[active=true]:text-error-700',
-        '',
+      primary: '',
+        secondaryColour:'',
+      secondaryGray: '',
+      destructive: '',
     },
   },
   parentCompoundVariants: [
     {
       variant: 'default',
       action: 'primary',
-      class:
-        //'text-base-white '+
-       // 'data-[hover=true]:text-typography-0 '+
-       // 'data-[active=true]:text-typography-0',
-       '',
+      class: '',
     },
     {
       variant: 'default',
       action: 'secondaryColour',
       class:
-        //'text-typography-800 '+
-        //'data-[hover=true]:text-typography-800 '+
-        //'data-[active=true]:text-typography-800',
-        '',
+        'text-primary-800 ',
     },
     {
       variant: 'default',
       action: 'secondaryGray',
       class:
-        //'text-typography-800 '+
-        //'data-[hover=true]:text-typography-800 '+
-        //'data-[active=true]:text-typography-800',
-        '',
+        'text-gray-800 ',
     },
     {
       variant: 'default',
       action: 'destructive',
       class:
-        //'text-typography-0 '+
-        //'data-[hover=true]:text-typography-0 '+
-        //'data-[active=true]:text-typography-0',
-        '',
+      'text-error-800 ',
+    },
+    {
+      variant: 'link',
+      action: 'secondaryColour',
+      class:
+      'text-primary-800 ',
+    },
+    {
+      variant: 'link',
+      action: 'secondaryGray',
+      class:
+      'text-gray-800 ',
     },
   ],
 });
