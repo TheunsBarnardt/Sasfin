@@ -52,6 +52,21 @@ export default function ButtonPage() {
       </Button>   
     </VStack>  
 
+    <VStack space="md" reversed={false}>
+      <Button action={"destructive"} variant={"solid"} size={"md"} isDisabled={false} >
+        <ButtonText>destructive-solid-md</ButtonText>
+      </Button>
+      <Button action={"destructive"} variant={"solid"} size={"lg"} isDisabled={false}>
+        <ButtonText>destructive-solid-lg</ButtonText>
+      </Button>
+      <Button action={"destructive"} variant={"solid"} size={"xl"} isDisabled={false}>
+        <ButtonText>destructive-solid-xl</ButtonText>
+      </Button> 
+      <Button action={"destructive"} variant={"solid"} size={"xl"} isDisabled={true}>
+        <ButtonText>destructive-disabled</ButtonText>
+      </Button>   
+    </VStack>  
+
   </HStack>
   )
 }
