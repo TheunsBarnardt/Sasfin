@@ -82,6 +82,21 @@ export default function ButtonPage() {
       </Button>   
     </VStack>  
 
+    <VStack space="md" reversed={false}>
+      <Button action={"secondaryColour"} variant={"link"} size={"md"} isDisabled={false}>
+        <ButtonText>gray-link-md</ButtonText>
+      </Button>
+      <Button action={"secondaryColour"} variant={"link"} size={"lg"} isDisabled={false}>
+        <ButtonText>gray-link-lg</ButtonText>
+      </Button>
+      <Button action={"secondaryColour"} variant={"link"} size={"xl"} isDisabled={false}>
+        <ButtonText>gray-link-xl</ButtonText>
+      </Button> 
+      <Button action={"secondaryColour"} variant={"link"} size={"xl"} isDisabled={true}>
+        <ButtonText>gray-link-disabled</ButtonText>
+      </Button>   
+    </VStack>  
+
   </HStack>
   )
 }

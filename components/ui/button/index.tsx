@@ -72,7 +72,9 @@ const buttonStyle = tva({
         'shadow-sm '+
         'bg-base-white '+
         'data-[hover=true]:bg-gray-100 '+
-        'data-[active=true]:shadow-lg ',     
+        'data-[active=true]:shadow-lg '+   
+        'data-[disabled=true]:border-gray-200 '+
+        'data-[disabled=true]:border ',
       destructive:
         'bg-base-white '+
         'border '+ 
@@ -84,9 +86,6 @@ const buttonStyle = tva({
         'data-[disabled=true]:border-gray-200 '+
         'data-[disabled=true]:border ',
       default:
-        //'bg-transparent '+
-        //'data-[hover=true]:bg-background-50 '+
-        //'data-[active=true]:bg-transparent',
         '',
     },
     variant: {
@@ -106,56 +105,49 @@ const buttonStyle = tva({
     {
       action: 'primary',
       variant: 'link',
-      class:
-        'px-0 '+
-        //'bg-transparent '+
-        //'data-[hover=true]:bg-transparent '+
-        //'data-[active=true]:bg-transparent',
-        '',
+      class: '',
     },
     {
       action: 'secondaryColour',
       variant: 'link',
       class:
         'px-0 '+
-        //'bg-transparent '+
-        //'data-[hover=true]:bg-transparent '+
-        //'data-[active=true]:bg-transparent',
-        '',
+        'bg-transparent '+
+        'border-transparent '+
+        'shadow-transparent '+ 
+        'data-[hover=true]:bg-transparent '+
+        'data-[active=true]:bg-transparent '+
+        'data-[active=true]:text-gray-100 '+
+        'data-[active=true]:shadow-none '+ 
+        'data-[disabled=true]:border-none ',
+
     },
     {
       action: 'secondaryGray',
       variant: 'link',
       class:
         'px-0 '+
-        //'bg-transparent '+
-        //'data-[hover=true]:bg-transparent '+
-        //'data-[active=true]:bg-transparent',
-        '',
+        'bg-transparent '+
+        'border-transparent '+
+        'shadow-transparent '+ 
+        'data-[hover=true]:bg-transparent '+
+        'data-[active=true]:bg-transparent '+
+        'data-[active=true]:text-gray-100 '+
+        'data-[active=true]:shadow-none '+
+        'data-[disabled=true]:border-none ',
     },
-    {
-      action: 'destructive',
-      variant: 'link',
-      class:
-        'px-0 '+
-        //'bg-transparent '+
-        //'data-[hover=true]:bg-transparent '+
-        //'data-[active=true]:bg-transparent',
-        '',
-    },   
   ],
 });
 
 const buttonTextStyle = tva({
-  base: //'text-typography-0 '+
-        'font-semibold '+
+  base: 'font-semibold '+
         'web:select-none',
   parentVariants: {
     action: {
       primary:
         'text-base-white '+
         'data-[disabled=true]:text-gray-400 ',
-        secondaryColour:
+      secondaryColour:
         'text-primary-700 '+
         'data-[hover=true]:text-primary-800 '+
         'data-[disabled=true]:text-gray-400 ',
@@ -170,15 +162,8 @@ const buttonTextStyle = tva({
       'data-[disabled=true]:text-gray-400 ',
     },
     variant: {
-      link: 
-        //'data-[hover=true]:underline '+
-        //'data-[active=true]:underline',
-        '',
-      default:
-        //'text-typography-0 '+
-        //'data-[hover=true]:text-typography-0 '+
-        //'data-[active=true]:text-typography-0',
-        '',
+      link: '',
+      default:'',
     },
     size: {
       xs: 'text-xs',
@@ -192,38 +177,22 @@ const buttonTextStyle = tva({
     {
       variant: 'default',
       action: 'primary',
-      class:
-        //'text-typography-0 '+
-        //'data-[hover=true]:text-typography-0 '+
-        //'data-[active=true]:text-typography-0',
-        '',
+      class:  '',
     },
     {
       variant: 'default',
       action: 'secondaryColour',
-      class:
-        //'text-typography-800 '+
-        //'data-[hover=true]:text-typography-800 '+
-        //'data-[active=true]:text-typography-800',
-        '',
+      class: '',
     },
     {
       variant: 'default',
       action: 'secondaryGray',
-      class:
-        //'text-typography-800 '+
-        //'data-[hover=true]:text-typography-800 '+
-        //'data-[active=true]:text-typography-800',
-        '',
+      class: '',
     },
     {
       variant: 'default',
       action: 'destructive',
-      class:
-       // 'text-typography-0 '+
-       // 'data-[hover=true]:text-typography-0 '+
-       // 'data-[active=true]:text-typography-0',
-       '',
+      class: '',
     },   
   ],
 });
