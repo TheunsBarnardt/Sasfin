@@ -222,37 +222,42 @@ const buttonIconStyle = tva({
     {
       variant: 'default',
       action: 'primary',
-      class: '',
+      class: 'data-[disabled=true]:text-gray-400 ',
     },
     {
       variant: 'default',
       action: 'secondaryColour',
       class:
-        'text-primary-800 ',
+        'text-primary-800 '+
+        'data-[disabled=true]:text-gray-400 ',
     },
     {
       variant: 'default',
       action: 'secondaryGray',
       class:
-        'text-gray-800 ',
+        'text-gray-800 '+
+        'data-[disabled=true]:text-gray-400 ',
     },
     {
       variant: 'default',
       action: 'destructive',
       class:
-      'text-error-800 ',
+      'text-error-800 '+
+      'data-[disabled=true]:text-gray-400 ',
     },
     {
       variant: 'link',
       action: 'secondaryColour',
       class:
-      'text-primary-800 ',
+      'text-primary-800 '+
+      'data-[disabled=true]:text-gray-400 ',
     },
     {
       variant: 'link',
       action: 'secondaryGray',
       class:
-      'text-gray-800 ',
+      'text-gray-800 '+
+      'data-[disabled=true]:text-gray-400 ',
     },
   ],
 });

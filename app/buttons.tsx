@@ -24,6 +24,10 @@ export default function ButtonPage() {
       <Button size="lg" action={"primary"}>
         <ButtonIcon as={EditIcon} />
       </Button> 
+      <Button size="lg" action={"primary"}  isDisabled={true}>
+        <ButtonIcon as={EditIcon} />
+      </Button>  
+
     </VStack>
 
     <VStack space="md" reversed={false}>
@@ -43,6 +47,9 @@ export default function ButtonPage() {
       <Button size="lg" action={"secondaryGray"}>
         <ButtonIcon as={EditIcon} />
       </Button> 
+      <Button size="lg" action={"secondaryGray"}  isDisabled={true}>
+        <ButtonIcon as={EditIcon} />
+      </Button>  
     </VStack>  
 
     <VStack space="md" reversed={false}>
@@ -60,6 +67,10 @@ export default function ButtonPage() {
       </Button> 
 
       <Button size="lg" action={"secondaryColour"}>
+        <ButtonIcon as={EditIcon} />
+      </Button>  
+
+      <Button size="lg" action={"secondaryColour"}  isDisabled={true}>
         <ButtonIcon as={EditIcon} />
       </Button>   
     </VStack>  
@@ -81,6 +92,10 @@ export default function ButtonPage() {
       <Button size="lg" action={"destructive"}>
         <ButtonIcon as={EditIcon} />
       </Button>  
+
+      <Button size="lg" action={"destructive"}  isDisabled={true}>
+        <ButtonIcon as={EditIcon} />
+      </Button>
     </VStack>  
 
     <VStack space="md" reversed={false}>
@@ -100,6 +115,9 @@ export default function ButtonPage() {
       <Button size="lg" action={"secondaryGray"} variant={"link"}>
         <ButtonIcon as={EditIcon} />
       </Button>  
+      <Button size="lg" action={"secondaryGray"} variant={"link"} isDisabled={true}>
+        <ButtonIcon as={EditIcon} />
+      </Button>  
     </VStack>  
 
     <VStack space="md" reversed={false}>
@@ -117,6 +135,10 @@ export default function ButtonPage() {
       </Button>  
 
       <Button size="lg" action={"secondaryColour"} variant={"link"}>
+        <ButtonIcon as={EditIcon} />
+      </Button>  
+
+            <Button size="lg" action={"secondaryColour"} variant={"link"} isDisabled={true}>
         <ButtonIcon as={EditIcon} />
       </Button>   
     </VStack>  
