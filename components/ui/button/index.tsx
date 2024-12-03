@@ -91,12 +91,7 @@ const buttonStyle = tva({
     },
     variant: {
       link: 'px-0',
-      outline:
-        //'bg-transparent '+
-        //'border data-[hover=true]:bg-background-50 '+
-        //'data-[active=true]:bg-transparent',
-        '',
-      solid: '',
+      default: '',
     },
 
     size: {
@@ -147,43 +142,7 @@ const buttonStyle = tva({
         //'data-[hover=true]:bg-transparent '+
         //'data-[active=true]:bg-transparent',
         '',
-    },
-    {
-      action: 'primary',
-      variant: 'outline',
-      class:
-        //'bg-transparent '+
-        //'data-[hover=true]:bg-background-50 '+
-        //'data-[active=true]:bg-transparent',
-        '',
-    },
-    {
-      action: 'secondaryColour',
-      variant: 'outline',
-      class:
-        //'bg-transparent '+
-        //'data-[hover=true]:bg-background-50 '+
-        //'data-[active=true]:bg-transparent',
-        '',
-    },
-    {
-      action: 'secondaryGray',
-      variant: 'outline',
-      class:
-        //'bg-transparent '+
-        //'data-[hover=true]:bg-background-50 '+
-        //'data-[active=true]:bg-transparent',
-        '',
-    },
-    {
-      action: 'destructive',
-      variant: 'outline',
-      class:
-        //'bg-transparent '+
-        //'data-[hover=true]:bg-background-50 '+
-        //'data-[active=true]:bg-transparent',
-        '',
-    },
+    },   
   ],
 });
 
@@ -215,8 +174,7 @@ const buttonTextStyle = tva({
         //'data-[hover=true]:underline '+
         //'data-[active=true]:underline',
         '',
-      outline: '',
-      solid:
+      default:
         //'text-typography-0 '+
         //'data-[hover=true]:text-typography-0 '+
         //'data-[active=true]:text-typography-0',
@@ -232,7 +190,7 @@ const buttonTextStyle = tva({
   },
   parentCompoundVariants: [
     {
-      variant: 'solid',
+      variant: 'default',
       action: 'primary',
       class:
         //'text-typography-0 '+
@@ -241,7 +199,7 @@ const buttonTextStyle = tva({
         '',
     },
     {
-      variant: 'solid',
+      variant: 'default',
       action: 'secondaryColour',
       class:
         //'text-typography-800 '+
@@ -250,7 +208,7 @@ const buttonTextStyle = tva({
         '',
     },
     {
-      variant: 'solid',
+      variant: 'default',
       action: 'secondaryGray',
       class:
         //'text-typography-800 '+
@@ -259,50 +217,14 @@ const buttonTextStyle = tva({
         '',
     },
     {
-      variant: 'solid',
+      variant: 'default',
       action: 'destructive',
       class:
        // 'text-typography-0 '+
        // 'data-[hover=true]:text-typography-0 '+
        // 'data-[active=true]:text-typography-0',
        '',
-    },
-    {
-      variant: 'outline',
-      action: 'primary',
-      class:
-        //'text-primary-500 '+
-        //'data-[hover=true]:text-primary-500 '+
-        //'data-[active=true]:text-primary-500',
-        '',
-    },
-    {
-      variant: 'outline',
-      action: 'secondaryColour',
-      class:
-       // 'text-typography-500 '+
-       // 'data-[hover=true]:text-primary-600 '+
-       // 'data-[active=true]:text-typography-700',
-       '',
-    },
-    {
-      variant: 'outline',
-      action: 'secondaryGray',
-      class:
-        //'text-typography-500 '+
-        //'data-[hover=true]:text-primary-600 '+
-        //'data-[active=true]:text-typography-700',
-        '',
-    },
-    {
-      variant: 'outline',
-      action: 'destructive',
-      class:
-        //'text-primary-500 '+
-        //'data-[hover=true]:text-primary-500 '+
-        //'data-[active=true]:text-primary-500',
-        '',
-    },
+    },   
   ],
 });
 
@@ -314,8 +236,7 @@ const buttonIconStyle = tva({
         //'data-[hover=true]:underline '+
         //'data-[active=true]:underline',
         '',
-      outline: '',
-      solid:
+      default:
         //'text-typography-0 '+
         //'data-[hover=true]:text-typography-0 '+
         //'data-[active=true]:text-typography-0',
@@ -353,7 +274,7 @@ const buttonIconStyle = tva({
   },
   parentCompoundVariants: [
     {
-      variant: 'solid',
+      variant: 'default',
       action: 'primary',
       class:
         //'text-base-white '+
@@ -362,7 +283,7 @@ const buttonIconStyle = tva({
        '',
     },
     {
-      variant: 'solid',
+      variant: 'default',
       action: 'secondaryColour',
       class:
         //'text-typography-800 '+
@@ -371,7 +292,7 @@ const buttonIconStyle = tva({
         '',
     },
     {
-      variant: 'solid',
+      variant: 'default',
       action: 'secondaryGray',
       class:
         //'text-typography-800 '+
@@ -380,7 +301,7 @@ const buttonIconStyle = tva({
         '',
     },
     {
-      variant: 'solid',
+      variant: 'default',
       action: 'destructive',
       class:
         //'text-typography-0 '+
@@ -427,7 +348,7 @@ const Button = React.forwardRef<
   IButtonProps
 >(
   (
-    { className, variant = 'solid', size = 'md', action = 'primary', ...props },
+    { className, variant = 'default', size = 'md', action = 'primary', ...props },
     ref
   ) => {
     return (
