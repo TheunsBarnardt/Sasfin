@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Sasfin.com",
-    "slug": "Sasfin.com",
+    "name": "Sasfin",
+    "slug": "Sasfin",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

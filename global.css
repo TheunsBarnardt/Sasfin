@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Avenir-Black";
+  src: url("/assets/fonts/Avenir-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir-BlackOblique";
+    src: url("/assets/fonts/Avenir-BlackOblique.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Avenir-Book";
+    src: url("/assets/fonts/Avenir-Book.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Avenir-BookOblique";
+    src: url("/assets/fonts/Avenir-BookOblique.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Avenir-Heavy";
+    src: url("/assets/fonts/Avenir-Heavy.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Avenir-HeavyOblique";
+    src: url("/assets/fonts/Avenir-HeavyOblique.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Avenir-Light";
+    src: url("/assets/fonts/Avenir-Light.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Avenir-LightOblique";
+    src: url("/assets/fonts/Avenir-LightOblique.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Avenir-Medium";
+    src: url("/assets/fonts/Avenir-Medium.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Avenir-MediumOblique";
+    src: url("/assets/fonts/Avenir-MediumOblique.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Avenir-Oblique";
+    src: url("/assets/fonts/Avenir-Oblique.ttf") format("truetype");
+  }
+
+  
+  @font-face {
+    font-family: "Avenir-Roman";
+    src: url("/assets/fonts/Avenir-Roman.ttf") format("truetype");
+  }
