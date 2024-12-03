@@ -23,37 +23,19 @@ export default function ButtonPage() {
     </VStack>
 
     <VStack space="md" reversed={false}>
-      <Button action={"secondaryGray"} variant={"outline"} size={"lg"} isDisabled={false}>
-        <ButtonText>gray-outline-lg</ButtonText>
-      </Button>
-      <Button action={"secondaryGray"} variant={"link"} size={"lg"} isDisabled={false}>
-        <ButtonText>gray-link-lg</ButtonText>
+      <Button action={"secondaryGray"} variant={"solid"} size={"md"} isDisabled={false}>
+        <ButtonText>gray-solid-md</ButtonText>
       </Button>
       <Button action={"secondaryGray"} variant={"solid"} size={"lg"} isDisabled={false}>
         <ButtonText>gray-solid-lg</ButtonText>
       </Button>
-      <Button action={"secondaryGray"} variant={"solid"} size={"md"} isDisabled={false}>
-        <ButtonText>gray-solid-md</ButtonText>
-      </Button>
-      <Button action={"secondaryGray"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>gray-solid-sm</ButtonText>
-      </Button>
       <Button action={"secondaryGray"} variant={"solid"} size={"xl"} isDisabled={false}>
-        <ButtonText>gray-solid-sm</ButtonText>
-      </Button>
-      <Button action={"secondaryGray"} variant={"solid"} size={"sm"} isDisabled={false}>
-        <ButtonText>gray-solid-sm</ButtonText>
-      </Button>
-      <Button action={"secondaryGray"} variant={"outline"} size={"lg"} isDisabled={true}>
-        <ButtonText>gray-outline-lg-disabled</ButtonText>
-      </Button>
-      <Button action={"secondaryGray"} variant={"link"} size={"lg"} isDisabled={true}>
-        <ButtonText>gray-link-lg-disabled</ButtonText>
-      </Button>
-      <Button action={"secondaryGray"} variant={"solid"} size={"lg"} isDisabled={true}>
-        <ButtonText>gray-solid-lg-disabled</ButtonText>
-      </Button>
-    </VStack>
+        <ButtonText>gray-solid-xl</ButtonText>
+      </Button> 
+      <Button action={"secondaryGray"} variant={"solid"} size={"xl"} isDisabled={true}>
+        <ButtonText>gray-disabled</ButtonText>
+      </Button>   
+    </VStack>  
 
     <VStack space="md" reversed={false}>
       <Button action={"secondaryBrightBlue"} variant={"outline"} size={"lg"} isDisabled={false}>

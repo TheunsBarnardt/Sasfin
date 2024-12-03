@@ -48,12 +48,13 @@ const buttonStyle = tva({
     action: {
       primary:
         'bg-primary-900 '+
+        'shadow-sm ' +
         'data-[hover=true]:bg-primary-700 '+
         'data-[active=true]:bg-primary-600 '+  
+        'data-[active=true]:shadow-lg '+  
         'data-[disabled=true]:border-gray-200 '+
         'data-[disabled=true]:border '+
-        'data-[disabled=true]:bg-gray-100 '+
-        'shadow-sm',
+        'data-[disabled=true]:bg-gray-100 ',
       secondarySkyBlue:
         //'bg-skyBlue-500 '+
         //'border-skyBlue-300 '+
@@ -73,14 +74,12 @@ const buttonStyle = tva({
         //'data-[focus-visible=true]:web:ring-indicator-info',
         '',
       secondaryGray:
-        //'bg-skyBlue-500 '+
-        //'border-skyBlue-300 '+
-        //'data-[hover=true]:bg-skyBlue-600 '+
-        //'data-[hover=true]:border-skyBlue-400 '+
-        //'data-[active=true]:bg-skyBlue-700 '+
-        //'data-[active=true]:border-skyBlue-700 '+
-        //'data-[focus-visible=true]:web:ring-indicator-info',
-        '',
+        'border ' + 
+        'border-gray-300 '+
+        'shadow-sm '+
+        'bg-base-white '+
+        'data-[hover=true]:bg-gray-100 '+
+        'data-[active=true]:shadow-lg ',
       success:
         //'bg-success-500 '+
         //'border-success-300 '+
@@ -264,10 +263,10 @@ const buttonTextStyle = tva({
         //'data-[active=true]:text-typography-700',
         '',
       secondaryGray:
-        //'text-typography-500 '+
-        //'data-[hover=true]:text-typography-600 '+
-        //'data-[active=true]:text-typography-700',
-        '',
+        'text-gray-700 '+
+        'data-[hover=true]:text-gray-800 '+
+        'data-[active=true]:text-gray-900 '+
+        'data-[disabled=true]:text-gray-400 ',
       success:
         //'text-success-600 '+
         //'data-[hover=true]:text-success-600 '+
