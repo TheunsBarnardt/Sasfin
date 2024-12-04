@@ -145,7 +145,7 @@ const checkboxStyle = tva({
 const checkboxIndicatorStyle = tva({
   base: 'justify-center '+
         'items-center '+
-        'border-outline-400 '+
+        'border-gray-300 '+
         'bg-transparent '+
         'rounded '+
         'web:data-[focus-visible=true]:outline-none '+
@@ -197,7 +197,7 @@ const checkboxLabelStyle = tva({
 });
 
 const checkboxIconStyle = tva({
-  base: 'text-typography-50 '+
+  base: 'text-base-white '+
         'fill-none',
 
   parentVariants: {

@@ -10,11 +10,12 @@ import { VStack } from './components/ui/vstack';
 import { Text } from './components/ui/text';
 import { Input, InputField, InputIcon, InputSlot } from './components/ui/input';
 import RadioPage from './app/radio';
+import CheckboxPage from './app/checkbox';
 
 export default function App() {
   return <GluestackUIProvider mode="light">
     <View style={styles.container}>
-    <RadioPage/>
+    <CheckboxPage/>
       <StatusBar style="auto" />
     </View>
   </GluestackUIProvider>;
