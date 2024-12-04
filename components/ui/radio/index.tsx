@@ -116,13 +116,13 @@ const radioIconStyle = tva({
   base: 'rounded-full '+
         'justify-center '+
         'items-center '+
-        'text-background-800 '+
-        'fill-background-800',
-
+        'bg-base-white ' +
+        'fill-none '+
+        ' ',
   parentVariants: {
     size: {
       sm: 'h-[9px] w-[9px]',
-      md: 'h-3 w-3',
+      md: 'h-2 w-2',
       lg: 'h-4 w-4',
     },
   },
@@ -131,30 +131,34 @@ const radioIconStyle = tva({
 const radioIndicatorStyle = tva({
   base: 'justify-center '+
         'items-center '+
-        'bg-transparent '+
-        'border-outline-400 '+
-        'border-2 '+
+        'border-gray-300 '+
+        'border '+
         'rounded-full '+
-        'data-[focus-visible=true]:web:outline-2 '+
-        'data-[focus-visible=true]:web:outline-primary-700 '+
-        'data-[focus-visible=true]:web:outline '+
+        
+        'bg-transparent '+
+        'data-[checked=true]:bg-primary-600 '+
+        'data-[active=true]:bg-transparent '+
+        'data-[disabled=true]:data-[checked=true]:bg-transparent '+
+
+        'data-[hover=true]:border-primary-600 '+
         'data-[checked=true]:border-primary-600 '+
-        'data-[checked=true]:bg-transparent '+
-        'data-[hover=true]:border-outline-500 '+
-        'data-[hover=true]:bg-transparent '+
-        'data-[hover=true]:data-[checked=true]:bg-transparent '+
-        'data-[hover=true]:data-[checked=true]:border-primary-700 '+
+        'data-[invalid=true]:border-error-700 '+
+        'data-[invalid=true]:data-[checked=true]:bg-error-700 '+
+        
+        'data-[hover=true]:data-[checked=true]:bg-primary-600 '+
+        'data-[hover=true]:data-[checked=true]:border-primary-600 '+
         'data-[hover=true]:data-[invalid=true]:border-error-700 '+
         'data-[hover=true]:data-[disabled=true]:opacity-40 '+
         'data-[hover=true]:data-[disabled=true]:border-outline-400 '+
         'data-[hover=true]:data-[disabled=true]:data-[invalid=true]:border-error-400 '+
-        'data-[active=true]:bg-transparent '+
-        'data-[active=true]:border-primary-800 '+
-        'data-[invalid=true]:border-error-700 '+
+
+        'data-[focus-visible=true]:web:outline '+
+        'data-[focus-visible=true]:web:outline-primary-700 '+
+        'data-[active=true]:border-primary-500 '+
         'data-[disabled=true]:opacity-40 '+
         'data-[disabled=true]:data-[checked=true]:border-outline-400 '+
-        'data-[disabled=true]:data-[checked=true]:bg-transparent '+
-        'data-[disabled=true]:data-[invalid=true]:border-error-400',
+        'data-[disabled=true]:data-[invalid=true]:border-error-400' +
+        '',
   parentVariants: {
     size: {
       sm: 'h-4 w-4',

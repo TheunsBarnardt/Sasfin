@@ -5,15 +5,16 @@ import { StatusBar } from 'expo-status-bar';
 import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
 import { StyleSheet, View } from 'react-native';
 import ButtonPage from './app/buttons';
-import InputPage from './app/input';
+import InputPage from './app/radio';
 import { VStack } from './components/ui/vstack';
 import { Text } from './components/ui/text';
 import { Input, InputField, InputIcon, InputSlot } from './components/ui/input';
+import RadioPage from './app/radio';
 
 export default function App() {
   return <GluestackUIProvider mode="light">
     <View style={styles.container}>
-    <ButtonPage/>
+    <RadioPage/>
       <StatusBar style="auto" />
     </View>
   </GluestackUIProvider>;
