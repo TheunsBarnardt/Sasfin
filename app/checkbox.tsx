@@ -7,17 +7,35 @@ import { CheckIcon } from '@/components/ui/icon';
 
 
 export default function CheckboxPage() {
+  const [values, setValues] = React.useState(["Eng"])
   return (
     <HStack space="xl" reversed={false}>
       <VStack space="md" reversed={false}>
-      
-          <Checkbox value='val1' size="md" isInvalid={false} isDisabled={false}>
+        <CheckboxGroup
+          value={values}
+          onChange={(keys) => {
+            setValues(keys)
+          }}
+        >
+          <Checkbox value="Eng">
             <CheckboxIndicator>
               <CheckboxIcon as={CheckIcon} />
             </CheckboxIndicator>
-            <CheckboxLabel>Label</CheckboxLabel>
+            <CheckboxLabel>Framer</CheckboxLabel>
           </Checkbox>
-
+          <Checkbox value="invison">
+            <CheckboxIndicator>
+              <CheckboxIcon as={CheckIcon} />
+            </CheckboxIndicator>
+            <CheckboxLabel>Invision Studio</CheckboxLabel>
+          </Checkbox>
+          <Checkbox value="adobe">
+            <CheckboxIndicator>
+              <CheckboxIcon as={CheckIcon} />
+            </CheckboxIndicator>
+            <CheckboxLabel>Adobe XD</CheckboxLabel>
+          </Checkbox>
+        </CheckboxGroup>
       </VStack>
     </HStack>
   )
