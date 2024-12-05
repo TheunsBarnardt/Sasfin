@@ -13,28 +13,41 @@ const SCOPE = 'BADGE';
 
 const badgeStyle = tva({
   base: 'flex-row '+
-        'items-center '+
-        'rounded-sm '+
+        'justify-center ' +
+        'rounded '+
         'data-[disabled=true]:opacity-50 '+
         'px-2 '+
-        'py-1',
+        'py-1 '+
+        'space-x-2',
   variants: {
     action: {
       error: 
-        'bg-background-error '+
+        'bg-error-50 '+
         'border-error-300',
+      primary: 
+        'bg-primary-50 '+
+        'border-primary-300',
+      yellow: 
+        'bg-yellow-50 '+
+        'border-yellow-300',
+      brightBlue: 
+        'bg-brightBlue-50 '+
+        'border-brightBlue-300',
+      skyBlue: 
+        'bg-skyBlue-50 '+
+        'border-skyBlue-300',
       warning: 
-        'bg-background-warning '+
+        'bg-warning-50 '+
         'border-warning-300',
       success: 
-        'bg-background-success '+
+        'bg-success-50 '+
         'border-success-300',
       info: 
-        'bg-background-info '+
+        'bg-info-50 '+
         'border-info-300',
       muted: 
-        'bg-background-muted '+
-        'border-background-300',
+        'bg-gray-50 '+
+        'border-gray-300',
     },
     variant: {
       solid: '',
@@ -49,19 +62,23 @@ const badgeStyle = tva({
 });
 
 const badgeTextStyle = tva({
-  base: 'text-typography-700 '+
+  base: 'text-gray-700 '+
         'font-body '+
         'font-normal '+
         'tracking-normal '+
-        'uppercase',
+        '',
 
   parentVariants: {
     action: {
-      error: 'text-error-600',
-      warning: 'text-warning-600',
-      success: 'text-success-600',
-      info: 'text-info-600',
-      muted: 'text-secondary-600',
+      error: 'text-error-700',
+      primary: 'text-primary-700',
+      yellow: 'text-yellow-700',
+      brightBlue: 'text-brightBlue-700',
+      skyBlue: 'text-skyBlue-700',
+      warning: 'text-warning-700',
+      success: 'text-success-700',
+      info: 'text-info-700',
+      muted: 'text-gray-700',
     },
     size: {
       sm: 'text-2xs',
@@ -98,11 +115,15 @@ const badgeIconStyle = tva({
   base: 'fill-none',
   parentVariants: {
     action: {
-      error: 'text-error-600',
-      warning: 'text-warning-600',
-      success: 'text-success-600',
-      info: 'text-info-600',
-      muted: 'text-secondary-600',
+      error: 'text-error-700',
+      primary: 'text-primary-700',
+      yellow: 'text-yellow-700',
+      brightBlue: 'text-brightBlue-700',
+      skyBlue: 'text-skyBlue-700',
+      warning: 'text-warning-700',
+      success: 'text-success-700',
+      info: 'text-info-700',
+      muted: 'text-gray-700',
     },
     size: {
       sm: 'h-3 w-3',
